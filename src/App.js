@@ -1,23 +1,25 @@
-import { EngagedPeople } from "./components/EngagedPeople";
-import { Features } from "./components/Features";
-import { Footer } from "./components/Footer";
-import { Hero } from "./components/Hero";
-import { Integrations } from "./components/Integrations";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import { Navbar } from "./components/Navbar";
-import { Reviews } from "./components/Reviews";
-import { Steps } from "./components/Steps";
+import { Home } from "./pages/Home";
+import { SignUp } from './pages/Auth/SignUp';
+import { SignIn } from './pages/Auth/SignIn';
+import { ForgotPassword } from './pages/Auth/ForgotPassword';
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <Steps/>
-      <Features/>
-      <EngagedPeople/>
-      <Integrations/>
-      <Reviews/>
-      <Footer/>
+    <Navbar/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/'>
+            <Route index element={<Home/>} />
+            <Route path='signup' element={<SignUp/>} />
+            <Route path='signin' element={<SignIn/>} />
+            <Route path='forgotpassword' element={<ForgotPassword/>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

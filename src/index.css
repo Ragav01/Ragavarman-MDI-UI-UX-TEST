@@ -37,6 +37,9 @@
   section{
     @apply max-w-screen-xl mx-auto px-2 pt-14 lg:pt-28
   }
+  input{
+    @apply block w-full h-14 text-skin-base px-6 bg-[#eff5ff] dark:bg-[#131A37] rounded-lg
+  }
 }
 
 @layer utilities{
