@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+  :root{
+    --color-primary: #55F5A3;
+    --color-secondary: #C2FF66;
+    --color-text-base: #181818;
+    --color-text-muted: #606067;
+    --color-text-inverted: #FFFFFF;
+    --color-text-cta-hover: #181818;
+    --color-background-body: #F5F3EB;
+    --color-background-surface: #FFFFFF;
+    --color-background-inverted: #181818;
+    --color-border-base: #181818;
+    --color-border-inverted: #FFFFFF;
+  }
+
+  .dark{
+      --color-text-base: #FFFFFF;
+      --color-text-muted: #949DB4;
+      --color-text-inverted: #181818;
+      --color-text-cta-hover: #181818;
+      --color-background-body: #020617;
+      --color-background-surface: #0F172A;
+      --color-background-inverted: #FFFFFF;
+      --color-border-base: #FFFFFF;
+      --color-border-inverted: #181818;
+  }
+  html{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  body{
+    @apply bg-skin-body 
+  }
+  section{
+    @apply max-w-screen-xl mx-auto px-4 pt-16 lg:pt-28
+  }
+}
+
+@layer utilities{
+  .btn{
+    @apply  text-lg tracking-tight font-medium px-7 inline-flex gap-x-3 items-center justify-center rounded-full
+  }
+  .btn-md{
+    @apply h-12
+  }
+  .btn-lg{
+    @apply h-14
+  }
+  .btn-default{
+    @apply bg-skin-inverted hover:bg-skin-primary text-skin-inverted hover:text-skin-ctahover border-2 border-black hover:border-2
+  }
+  .btn-outline{
+    @apply text-skin-base hover:text-skin-ctahover border-2 border-skin-base hover:bg-skin-primary
+  }
+}
+
