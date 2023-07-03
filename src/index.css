@@ -35,7 +35,7 @@
     @apply bg-skin-body 
   }
   section{
-    @apply max-w-screen-xl mx-auto px-4 pt-16 lg:pt-28
+    @apply max-w-screen-xl mx-auto px-2 pt-14 lg:pt-28
   }
 }
 

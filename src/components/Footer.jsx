@@ -14,11 +14,11 @@ const FooterLinks = [
     },
     {
         category: 'About',
-        link: [{title: 'Blog'},{title: 'Help center'},{title: 'Community'},{title:'Terms of Service'}]
+        link: [{title: 'Blog'},{title: 'Help center'},{title: 'Community'},{title:'Contacts'}]
     },
     {
         category: 'others',
-        link: [{title: 'Contacts'},{title: 'Talk to sales'}]
+        link: [{title: 'Terms of Service'},{title: 'Talk to sales'}]
     }
 ]
 export const Footer = () => {

@@ -13,7 +13,7 @@ import { ButtonOutline } from './Button';
 
 export const Features = () => {
   return (
-    <section className='space-y-16'>
+    <section className='space-y-10'>
         <div className='flex flex-col lg:flex-row justify-between gap-4 lg:gap-10'>
             <h2 className='flex-1 text-3xl md:text-6xl leading-tight text-skin-base font-semibold'>What we offer you as  job platform</h2>
             <p className='flex-1 text-base md:text-lg text-skin-muted lg:pt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique ornare. Lorem ipsum dolor sit amet, consectetur elit. Suspendisse varius enim in eros  Lorem ipsum dolor sit amet, consectetur adipiscing el</p>

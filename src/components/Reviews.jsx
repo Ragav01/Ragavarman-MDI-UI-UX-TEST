@@ -27,8 +27,8 @@ export const Reviews = () => {
 
     ]
   return (
-    <section className='relative'>
-        <div className='lg:w-7/12 mx-auto mb-5 md:mb-14'>
+    <section className='relative space-y-10'>
+        <div className='lg:w-7/12 mx-auto mb-5'>
             <h2 className='text-3xl md:text-6xl text-center leading-tight text-skin-base font-semibold'>Hear what our beloved customer said</h2>
         </div>
         <div class="columns-1 md:columns-2 lg:columns-3 space-y-3">
